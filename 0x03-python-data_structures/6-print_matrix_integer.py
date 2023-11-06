@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/user/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         length = 1
@@ -7,4 +7,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d}".format(coloumn), end="")
             else:
                 print("{:d}".format(coloumn), end=" ")
+            length = length + 1
         print()
