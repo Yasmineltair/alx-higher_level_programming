@@ -1,4 +1,4 @@
-#include <python.h>
+#include <Python.h>
 
 /**
   * print_python_list_info - prints some
@@ -10,17 +10,17 @@
 void print_python_list_info(PyObject *p)
 {
 int size, allocation, i;
-pyobject *obj;
+PyObject *obj;
 
-size = PY_SIZE(p);
-allocation = ((pylistobject *)p)->allocated;
+size = Py_SIZE(p);
+allocation = ((PyListObject *)p)->allocated;
 
 printf("[*] Size of the Python List = %d\n", size);
 printf("[*] Allocated = %d\n", allocation);
-for (i = 0, i < size, i++)
+for (i = 0; i < size; i++)
 {
 	printf("Element %d: ", i);
-	obj = pylist_GetItem(p, i);
-	printf("%s\n", py_TYPE(obj)->tp_name);
+	obj = PyList_GetItem(p, i);
+	printf("%s\n", Py_TYPE(obj)->tp_name);
 }
 }
