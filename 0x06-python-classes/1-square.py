@@ -4,7 +4,8 @@
 
 class Square:
     """Defines a square by: (based on 0-square.py)."""
-    def size(self, size):
+
+    def __init__(self, size):
         """constructor.
         Args:
         size: size of the square."""
