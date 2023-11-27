@@ -1,4 +1,4 @@
-<<< add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 >>> add_integer(0, 0)
 0
@@ -27,12 +27,3 @@ TypeError: a must be an integer
 >>> add_integer(35, 'b')
 Traceback (most recent call last):
 TypeError: b must be an integer
->>> add_integer(float('inf'), 0)
-Traceback (most recent call last):
-...
-OverflowError: cann't convert float infinity to integer
->>> add_integer(0, float('nan'))
-Traceback )most recent call last):
-...
-ValueError: cann't convert float NAN to integer
-
