@@ -1,0 +1,24 @@
+import function:
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+first name &second name are str:
+>>> say_my_name("yasmin", "salah")
+My name is yasmin salah
+
+first name is str but second is not:
+>>> say_my_name("yasmin", 3)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+first name is not str:
+>>> say_my_name(12, "yasmin")
+Traceback (most recent call last):
+...
+TypError: first_name must be a string
+
+both names are not str:
+>>> say_my_name(7, 6)
+Traceback (most recent call last)
+...
+TypeError: first_name must be a string
