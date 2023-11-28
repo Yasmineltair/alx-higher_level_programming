@@ -9,5 +9,7 @@ class LockedClass:
     instance attribute is called first_name
     """
 
+    __slots__ = ["first_name"]
+
     def __init(self, first_name=""):
         self.first_name = first_name
