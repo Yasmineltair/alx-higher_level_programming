@@ -1,1 +1,16 @@
->>> BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> BG = BaseGeometry()
+
+>>> BG.integer_validator("number", 6)
+
+>>> BG.integer_validator("number", -4)
+Traceback (most recent call last):
+ValueError: number must be greater than 0
+
+>>> BG.integer_validator("number", 7, 8, 5)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 5 were given
+
+>>> BG.integer_validator("infnumber", int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
