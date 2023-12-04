@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" module to return list od dir """
 
 
 def lookup(obj):
