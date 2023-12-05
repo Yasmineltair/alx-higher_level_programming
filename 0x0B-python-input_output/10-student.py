@@ -17,6 +17,6 @@ class Student:
             return self.__dict__
         new_dictionary = {}
         for key, value in self.__dict__.items():
-            if key == attrs:
+            if key in attrs:
                 new_dictionary[key] = value
         return new_dictionary
