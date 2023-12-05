@@ -13,7 +13,7 @@ def pascal_triangle(n):
             if cn == 0:
                 lst.append([1])
             elif cn == rw:
-                lst[rw.append(1)]
+                lst[rw].append(1)
             else:
                 lst[rw].append(lst[rw - 1][cn] + lst[rw - 1][cn - 1])
     return lst
