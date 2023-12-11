@@ -8,14 +8,13 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ class constructor"""
-
         super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
 
-    @width.getter
+    @property
     def width(self):
         """ width getter"""
         return self.__width
@@ -27,10 +26,10 @@ class Rectangle(Base):
             raise TypeError(f"{value} must be an integer")
         elif value <= 0:
             raise ValueError(f"{value} must be > 0")
-           else:
+        else:
             self.__width = value
 
-    @height.getter
+    @property
     def height(self):
         """ height getter"""
         return self.__height
@@ -45,7 +44,7 @@ class Rectangle(Base):
         else:
             self.__height = value
 
-    @x.getter
+    @property
     def x(self):
         """ x getter"""
         return self.__x
@@ -60,7 +59,7 @@ class Rectangle(Base):
         else:
             self.__x = value
 
-    @y.getter
+    @property
     def y(self):
         """ y getter"""
         return self.__y
