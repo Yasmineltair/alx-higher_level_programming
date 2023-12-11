@@ -23,7 +23,7 @@ class Rectangle(Base):
     def width(self, value):
         """ width setter """
         if type(value) is not int:
-            raise TypeError("width  must be an integer")
+            raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
         else:
