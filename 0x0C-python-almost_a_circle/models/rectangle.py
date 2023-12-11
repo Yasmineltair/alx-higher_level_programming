@@ -27,7 +27,7 @@ class Rectangle(Base):
             raise TypeError(f"{value} must be an integer")
         elif value <= 0:
             raise ValueError(f"{value} must be > 0")
-        else:
+           else:
             self.__width = value
 
     @height.getter
