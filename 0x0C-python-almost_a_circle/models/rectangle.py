@@ -109,5 +109,5 @@ class Rectangle(Base):
                 elif indx == 5:
                     self.__y = i
         else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+            for key, values in kwargs.items():
+                setattr(self, key, values)
