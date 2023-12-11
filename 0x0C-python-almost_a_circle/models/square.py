@@ -29,8 +29,8 @@ class Square(Rectangle):
         """ public method that assigns attributes:"""
         indx = 0
         if args is not None and len(args) != 0:
-            indx += 1
             for i in args:
+                indx += 1
                 if indx == 1:
                     self.id = i
                 elif indx == 2:
