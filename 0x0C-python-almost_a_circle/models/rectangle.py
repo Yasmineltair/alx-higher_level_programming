@@ -80,5 +80,6 @@ class Rectangle(Base):
 
     def display(self):
         """ display public method """
-        r = ('\n' * self.y) + ((" " * self.x) + ('#' * self.width) * self.height)
-        print(r, end="")
+        [print() for space in range(self.y)]
+        [print(" " * self.x + "#" * self.width)
+         for line in range(self.height)]
