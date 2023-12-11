@@ -105,7 +105,7 @@ class Rectangle(Base):
                 elif indx == 3:
                     self.__height = i
                 elif indx == 4:
-                    self.__x == i
+                    self.__x = i
                 elif indx == 5:
                     self.__y = i
         else:
