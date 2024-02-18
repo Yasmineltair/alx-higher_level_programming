@@ -11,8 +11,7 @@ if __name__ == "__main__":
          host="localhost",
          user=argv[1],
          passwd=argv[2],
-         database=argv[3]
-	)
+         database=argv[3])
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states \
                   WHERE name LIKE BINARY '{}' \
